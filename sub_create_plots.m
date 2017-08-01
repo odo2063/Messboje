@@ -62,7 +62,7 @@ function sub_create_plots(day_count, anzahl)
 #                 grid minor
 #                 print("/home/chip/boje/html/plots/7tage_lufttemp.png", '-color', '-dpng', '-S800,600' );
 	h=figure("visible","off");
-		plot(data(:,1),"linewidth",3)
+		plot(data(:,11),"linewidth",3)
 		title(strcat('Lufttemperatur ', num2str(anzahl), ' Tage'))
 		xlabel('Stunde')
 		ylabel('Temperatur in °C')
@@ -81,7 +81,7 @@ function sub_create_plots(day_count, anzahl)
 #                 grid minor
 #                 print("/home/chip/boje/html/plots/7tage_luftdruck.png", '-color', '-dpng', '-S800,600' );
 	h=figure("visible","off");
-		plot(data(:,1),"linewidth",3)
+		plot(data(:,12),"linewidth",3)
 		title(strcat('Luftdruck ', num2str(anzahl), ' Tage'))
 		xlabel('Stunde')
 		ylabel('Luftdruck in mbar')
@@ -100,7 +100,7 @@ function sub_create_plots(day_count, anzahl)
 #                 grid minor
 #                 print("/home/chip/boje/html/plots/7tage_luftfeuchte.png", '-color', '-dpng', '-S800,600' );
 	h=figure("visible","off");
-		plot(data(:,1),"linewidth",3)
+		plot(data(:,13),"linewidth",3)
 		title(strcat('Luftfeuchte ', num2str(anzahl), ' Tage'))
 		xlabel('Stunde')
 		ylabel('Luftfeuchte in rel%')
@@ -119,7 +119,7 @@ function sub_create_plots(day_count, anzahl)
 #                 grid minor
 #                 print("/home/chip/boje/html/plots/7tage_leitwert.png", '-color', '-dpng', '-S800,600' );
 	h=figure("visible","off");
-		plot(data(:,1),"linewidth",3)
+		plot(data(:,14),"linewidth",3)
 		title(strcat('Wasserleitwert ', num2str(anzahl), ' Tage'))
 		xlabel('Stunde')
 		ylabel('Leitwert in S/cm')
@@ -138,7 +138,7 @@ function sub_create_plots(day_count, anzahl)
 #                 grid minor
 #                 print("/home/chip/boje/html/plots/7tage_batteriespannung.png", '-color', '-dpng', '-S800,600' );
 	h=figure("visible","off");
-		plot(data(:,1),"linewidth",3)
+		plot(data(:,15),"linewidth",3)
 		title(strcat('Batteriespannung ', num2str(anzahl), ' Tage'))
 		xlabel('Stunde')
 		ylabel('Spannung in V')
@@ -157,7 +157,7 @@ function sub_create_plots(day_count, anzahl)
 #                 grid minor
 #                 print("/home/chip/boje/html/plots/7tage_Tiefe.png", '-color', '-dpng', '-S800,600' );
 	h=figure("visible","off");
-		plot(data(:,1),"linewidth",3)
+		plot(data(:,16),"linewidth",3)
 		title(strcat('Tiefe ', num2str(anzahl), ' Tage'))
 		xlabel('Stunde')
 		ylabel('Tiefe in cm')

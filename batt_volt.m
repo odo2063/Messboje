@@ -1,5 +1,5 @@
 function erg=batt_volt()
-V=1;#1=00, 2=01, 4=10, 8=11
+V=4;#1=00, 2=01, 4=10, 8=11
 y=1;
 
 #erzeuge Objekt mit dem gesprochen werden soll
@@ -24,5 +24,5 @@ end
 erg=(jo/2^15)*2.048*V
 #Spannungsteiler rausrechnen
 #erg=erg*(9.92e6+503e3)/503e3
-erg=erg*(24.7/0.4)
+erg=erg/0.041;
 end

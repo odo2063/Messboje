@@ -10,7 +10,7 @@ PWM.start("XIO-P4", 50, 100, 0)
 
 def MachAnders(x):
 	#print(x)
-	PWM.set_duty_cycle("XIO-P4", x)
+	PWM.set_duty_cycle("XIO-P4", x/4)
 
 
 if __name__ == "__main__":					# Programmstart

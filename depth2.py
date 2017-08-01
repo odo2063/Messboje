@@ -8,7 +8,7 @@ if __name__ == "__main__":
 	print(ser.name)
 	#ser.flush()
 	time.sleep(4)
-	ser.write(b'WP')
+	ser.write(b'TP')
 	#ser.flush()
 	data = ser.read(30)
 	ser.flush()
